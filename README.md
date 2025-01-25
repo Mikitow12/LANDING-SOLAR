@@ -3,188 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Venta Contraentrega</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Landing page para una cámara de seguridad con panel solar: protección, ahorro energético y control inteligente">
+    <title>Cámara Solar | Protección Inteligente</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* General Styles */
+        /* Personalización adicional */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Arial', sans-serif;
         }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        header {
-            background: #4CAF50;
-            color: #fff;
-            padding: 20px 10px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        section {
-            padding: 20px;
-        }
-
         .hero {
-            background: #f4f4f4;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .cta-button {
-            background: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .cta-button:hover {
-            background: #45a049;
-        }
-
-        .benefits {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .benefit {
-            flex: 1 1 calc(33.333% - 20px);
-            box-sizing: border-box;
-            margin: 10px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .testimonials {
-            background: #f9f9f9;
-            padding: 20px;
-        }
-
-        .testimonial {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .form-section input, .form-section button {
-            width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer a {
-            color: #4CAF50;
+            background: url('https://via.placeholder.com/1500x800') center/cover no-repeat;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-<header>
-    <h1>Protege tu hogar con energía solar – Sin cables, sin complicaciones.</h1>
-    <p>Fácil instalación, resistente al clima, y 100% autónoma. ¡Paga al recibir por solo 299 soles!</p>
-</header>
+    <!-- Header / Hero Section -->
+    <header class="hero text-white h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-4xl font-bold md:text-6xl">Seguridad 24/7 con Energía Solar</h1>
+        <p class="mt-4 text-lg md:text-xl">Ahorra energía, cuida el medio ambiente y protege tu hogar o negocio desde cualquier lugar.</p>
+        <a href="#comprar" class="mt-6 bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-yellow-400">Comprar Ahora por S/300</a>
+    </header>
 
-<section class="hero">
-    <img src="placeholder.jpg" alt="Cámara de Seguridad en Exterior">
-    <p>
-        <button class="cta-button">¡Quiero mi cámara ahora!</button>
-    </p>
-</section>
+    <!-- Beneficios Principales -->
+    <section class="py-16 px-6 bg-white text-center">
+        <h2 class="text-3xl font-bold">Beneficios Principales</h2>
+        <div class="mt-10 grid md:grid-cols-4 gap-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <img src="https://via.placeholder.com/80" alt="Energía Solar" class="mx-auto">
+                <h3 class="mt-4 font-semibold text-lg">Energía Solar</h3>
+                <p>Ahorro garantizado, sin necesidad de electricidad.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <img src="https://via.placeholder.com/80" alt="Visión Nocturna" class="mx-auto">
+                <h3 class="mt-4 font-semibold text-lg">Visión Nocturna</h3>
+                <p>Protección incluso en la oscuridad más total.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <img src="https://via.placeholder.com/80" alt="Control Remoto" class="mx-auto">
+                <h3 class="mt-4 font-semibold text-lg">Control Remoto</h3>
+                <p>Accede a la cámara desde tu celular en cualquier momento.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <img src="https://via.placeholder.com/80" alt="Fácil Instalación" class="mx-auto">
+                <h3 class="mt-4 font-semibold text-lg">Fácil Instalación</h3>
+                <p>Sin cables ni complicaciones técnicas.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="benefits">
-    <div class="benefit">
-        <h3>Energía Solar Integrada</h3>
-        <p>Funciona día y noche sin conexión eléctrica.</p>
-    </div>
-    <div class="benefit">
-        <h3>Resistencia a la Intemperie</h3>
-        <p>Ideal para cualquier clima.</p>
-    </div>
-    <div class="benefit">
-        <h3>Fácil Instalación</h3>
-        <p>Sin técnicos, hazlo tú mismo en minutos.</p>
-    </div>
-    <div class="benefit">
-        <h3>Monitoreo en Tiempo Real</h3>
-        <p>Compatible con dispositivos móviles.</p>
-    </div>
-    <div class="benefit">
-        <h3>Sin Cables, Sin Complicaciones</h3>
-    </div>
-</section>
+    <!-- Características Técnicas -->
+    <section class="py-16 px-6 bg-gray-50">
+        <h2 class="text-3xl font-bold text-center">Características Técnicas</h2>
+        <ul class="mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="bg-white p-4 rounded-lg shadow">📹 <strong>Resolución:</strong> 1080p Full HD</li>
+            <li class="bg-white p-4 rounded-lg shadow">🔋 <strong>Autonomía:</strong> Hasta 48 horas con batería cargada</li>
+            <li class="bg-white p-4 rounded-lg shadow">🌦️ <strong>Resistencia:</strong> Soporta lluvia, polvo y calor extremo</li>
+            <li class="bg-white p-4 rounded-lg shadow">📡 <strong>Conectividad:</strong> Wi-Fi y app móvil (Android/iOS)</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Oferta Especial</h2>
-    <p><strong>Precio Regular: 399 soles – ¡HOY solo 299 soles!</strong></p>
-    <p><strong>Incluye 3 meses de garantía sin costo adicional.</strong></p>
-    <div>
-        <h3>Oferta válida hasta hoy a las 11:59 PM</h3>
-    </div>
-</section>
+    <!-- Testimonios -->
+    <section class="py-16 px-6 bg-white text-center">
+        <h2 class="text-3xl font-bold">Lo Que Dicen Nuestros Clientes</h2>
+        <div class="mt-10 grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <p class="italic">"Compré esta cámara para mi tienda, y desde entonces puedo ver todo desde mi celular. Ahorro en luz y la instalación fue rapidísima."</p>
+                <p class="mt-4 font-semibold">— Juan Carlos, Lima</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <p class="italic">"La cámara es perfecta para mi casa de campo. No necesito cables y puedo vigilar a distancia en cualquier momento."</p>
+                <p class="mt-4 font-semibold">— Rosa María, Arequipa</p>
+            </div>
+        </div>
+    </section>
 
-<section class="testimonials">
-    <h2>Testimonios de Clientes</h2>
-    <div class="testimonial">
-        <p>"La instalación fue tan fácil como dijeron, ¡y funciona de maravilla incluso en días nublados!" – Ana G.</p>
-    </div>
-    <div class="testimonial">
-        <p>"Nunca imaginé una cámara de seguridad tan asequible y eficiente. ¡Gracias!" – Carlos P.</p>
-    </div>
-</section>
+    <!-- CTA Final -->
+    <section id="comprar" class="py-16 px-6 bg-yellow-100 text-center">
+        <h2 class="text-3xl font-bold">Empieza a Proteger tu Hogar Hoy</h2>
+        <p class="mt-4 text-lg">Compra ahora por S/300 y obtén envío GRATIS a todo el Perú.</p>
+        <a href="#" class="mt-6 inline-block bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-yellow-400">Comprar Ahora</a>
+    </section>
 
-<section class="form-section">
-    <h2>Reserva tu Cámara Ahora</h2>
-    <form action="/submit" method="post">
-        <input type="text" name="name" placeholder="Nombre Completo" required>
-        <input type="tel" name="phone" placeholder="Número de Teléfono" required>
-        <input type="text" name="address" placeholder="Dirección de Entrega" required>
-        <input type="number" name="quantity" placeholder="Cantidad (default: 1)" min="1" value="1" required>
-        <button type="submit">Reservar mi cámara ahora</button>
-    </form>
-</section>
-
-<section>
-    <h2>Preguntas Frecuentes</h2>
-    <p><strong>¿Cuánto demora la entrega?</strong> Normalmente entre 2 y 5 días hábiles.</p>
-    <p><strong>¿Qué incluye la caja?</strong> Una cámara solar, un manual y accesorios de instalación.</p>
-    <p><strong>¿Cómo se realiza el pago?</strong> Paga al recibir tu producto en efectivo.</p>
-</section>
-
-<footer>
-    <p>Contáctanos al <a href="tel:+51999999999">+51 999 999 999</a> o por WhatsApp.</p>
-    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
-</footer>
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <p>&copy; 2025 Cámara Solar | Todos los derechos reservados</p>
+        <nav class="mt-4">
+            <a href="#" class="text-gray-400 hover:text-white mx-2">Términos y Condiciones</a>
+            <a href="#" class="text-gray-400 hover:text-white mx-2">Política de Privacidad</a>
+        </nav>
+    </footer>
 
 </body>
 </html>
